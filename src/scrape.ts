@@ -4,13 +4,12 @@
 
 import axios from 'axios';
 import fs from 'fs';
+import { FORMS } from './constants';
 
 const Urls = {
     formoffices: (form: string) => `https://egov.uscis.gov/processing-times/api/formoffices/${form}`,
     processingtime: (form: string, office: string) => `https://egov.uscis.gov/processing-times/api/processingtime/${form}/${office}`,
 }
-
-const FORMS = ['I-102', 'I-129', 'I-129F', 'I-130', 'I-131', 'I-140', 'I-212', 'I-360', 'I-485', 'I-526', 'I-539', 'I-600', 'I-600A', 'I-601', 'I-601A', 'I-612', 'I-730', 'I-751', 'I-765', 'I-817', 'I-821', 'I-821D', 'I-824', 'I-829', 'I-90', 'I-914', 'I-918', 'I-924', 'N-400', 'N-565', 'N-600']
 
 async function fetchForms() {
     for (let form of FORMS) {
