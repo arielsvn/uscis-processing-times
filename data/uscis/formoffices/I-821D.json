@@ -1,0 +1,1 @@
+{"data":{"form_offices":{"form_name":"I-821D","offices":[{"office_code":"CSC","office_description":"California Service Center"},{"office_code":"NSC","office_description":"Nebraska Service Center"},{"office_code":"ESC","office_description":"Vermont Service Center"}]}},"message":"Query was successful for payload {'form_name': 'I-821D'}"}
